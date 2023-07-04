@@ -21,6 +21,8 @@
   "homepage": "https://github.com/utimur/production_project_code_source#readme",
   "devDependencies": {
     "@types/node": "^17.0.21",
+    "@types/react": "^18.2.14",
+    "@types/react-dom": "^18.2.6",
     "@types/webpack": "^5.28.0",
     "html-webpack-plugin": "^5.5.0",
     "ts-loader": "^9.2.6",
@@ -29,5 +31,9 @@
     "webpack": "^5.69.1",
     "webpack-cli": "^5.1.4",
     "webpack-dev-server": "^4.7.4"
+  },
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
   }
 }
