@@ -8,16 +8,16 @@ const LangSwitcher: React.FC = () => {
 
   const changeLanguage = (event: React.ChangeEvent<HTMLSelectElement>) => {
     const lng = event.target.value
-    i18n.changeLanguage(lng)
+    void i18n.changeLanguage(lng)
   }
 
   return (
-      <div>
-            <select className={classNames('LangSwitcher', {}, [])} onChange={changeLanguage} defaultValue={i18n.language}>
-              <option value="en">English</option>
-              <option value="de">German</option>
-          </select>
-        </div>
+    <div>
+      <select className={classNames('LangSwitcher', {}, [])} onChange={changeLanguage} defaultValue={i18n.language}>
+        <option value="en">English</option>
+        <option value="de">German</option>
+      </select>
+    </div>
   )
 }
 
