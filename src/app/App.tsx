@@ -1,6 +1,5 @@
-import React, { Suspense, useContext, useState } from 'react'
+import React from 'react'
 import './styles/index.scss'
-import { Link } from 'react-router-dom'
 import { useTheme } from './providers/ThemeProvider/ui/theme/useTheme'
 import { classNames } from 'shared/helpers/classNames'
 import { AppRouter } from './providers/router'
