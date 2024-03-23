@@ -1,0 +1,32 @@
+// styles/LangSwitcher.scss
+
+.LangSwitcher {
+    select {
+       appearance: none; // Removes default browser styling
+       -webkit-appearance: none; // For Safari
+       -moz-appearance: none; // For Firefox
+       background: var(--bg-color); // Background color
+       border: 1px solid #ccc; // Border color
+       border-radius: 4px; // Rounded corners
+       padding: 8px 12px; // Padding inside the select box
+       font-size: 14px; // Font size
+       color: var(--color-primary); // Text color
+       cursor: pointer; // Cursor style when hovering
+       outline: none; // Removes the outline on focus
+       width: 100%; // Full width of the parent container
+       max-width: 200px; // Maximum width of the select box
+   
+       &:hover {
+         border-color: #999; // Border color on hover
+       }
+   
+       &:focus {
+         border-color: #007bff; // Border color when focused
+         box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25); // Focus outline
+       }
+   
+       option {
+         padding: 8px 12px; // Padding inside the options
+       }
+    }
+   }
