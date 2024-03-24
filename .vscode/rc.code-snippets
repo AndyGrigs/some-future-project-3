@@ -18,9 +18,9 @@
     "React Functional Component": {
         "prefix": "rc",
         "body": [
-            "import React from \"react\";",
-            "import cls from \"./${TM_FILENAME_BASE}.module.scss\"",
-            "import {classNames} from \"sheared/lib/className\"",
+            "import React from 'react';",
+            "import cls from './${TM_FILENAME_BASE}.module.scss'",
+            "import {classNames} from 'sheared/helpers/className'",
             "",
             "export interface ${TM_FILENAME_BASE}Props {",
             "className?: string;",
