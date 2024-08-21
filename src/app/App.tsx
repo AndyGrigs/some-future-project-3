@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import './styles/index.scss';
 import { useTheme } from './providers/ThemeProvider/ui/theme/useTheme';
 import { classNames } from 'shared/helpers/classNames/classNames';
@@ -8,6 +8,8 @@ import { Sidebar } from 'widgets/Sidebar';
 
 const App = () => {
   const { theme } = useTheme();
+
+  
   return (
     <div className={classNames('app', {}, [theme])}>
       <Navbar />

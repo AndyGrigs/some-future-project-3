@@ -1,0 +1,30 @@
+/* PageError.module.scss */
+.PageError {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh; /* Take full height of the viewport */
+    background-color: #f8f9fa; /* Light grey background */
+    color: #212529; /* Dark text color */
+    font-size: 1.5rem; /* Larger font size for readability */
+    padding: 20px; /* Padding around the content */
+  
+    & > p {
+      margin-bottom: 10px; /* Space between the message and the button */
+    }
+  
+    & > button {
+      background-color: #007bff; /* Primary blue color */
+      color: white; /* White text color */
+      border: none;
+      border-radius: 5px; /* Rounded corners */
+      padding: 10px 20px; /* Padding around the button text */
+      cursor: pointer; /* Change cursor to indicate it's clickable */
+      transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+  
+      &:hover {
+        background-color: #0056b3; /* Darker shade on hover */
+      }
+    }
+  }

@@ -20,7 +20,7 @@
         "body": [
             "import React from 'react';",
             "import cls from './${TM_FILENAME_BASE}.module.scss'",
-            "import {classNames} from 'sheared/helpers/className'",
+            "import {classNames} from 'shared/helpers/classNames/classNames'",
             "",
             "export interface ${TM_FILENAME_BASE}Props {",
             "className?: string;",
@@ -28,7 +28,7 @@
             "",
             "export const $TM_FILENAME_BASE = ({className}:${TM_FILENAME_BASE}Props)=>  {",
             "  return (",
-            "    <div className={classNames(cls.${TM_FILENAME_BASE}, {}, [className])}>",
+            "    <div className={classNames(cls.${TM_FILENAME_BASE}, {}, [className || ''])}>",
             "      $2",
             "    </div>",
             "  )",
