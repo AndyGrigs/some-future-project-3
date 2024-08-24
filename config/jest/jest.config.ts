@@ -9,12 +9,26 @@ import type { Config } from 'jest';
 
 
 const config: Config = {
+  preset: 'ts-jest',
+  moduleNameMapper: {
+    '\\.(css|scss)$': 'identity-obj-proxy'
+  },
+  globals: {
+    'ts-jest': {
+      tsconfig: 'tsconfig.json', // Path to your tsconfig file
+    },
+  },
+  setupFilesAfterEnv:['<rootDir>config/jest/setupTests.ts'],
+
+
   // All imported modules in your tests should be mocked automatically
   // automock: false,
 
   // Stop running tests after `n` failures
   // bail: 0,
-
+  // moduleNameMapper: {
+  //   '\\.(css|scss)$': 'identity-obj-proxy'
+  //   },
   // The directory where Jest should store its cached dependency information
   // cacheDirectory: "C:\\Users\\ПК\\AppData\\Local\\Temp\\jest",
 
@@ -34,6 +48,9 @@ const config: Config = {
   ],
   moduleDirectories: [
     'node_modules',
+  ],
+  modulePaths:[
+    '<rootDir>src'
   ],
   testMatch: [
     // Обнаружил разницу между МАК ОС и ВИНДОУС!!!

@@ -6,6 +6,7 @@
     // Однако это не означает, что теперь вовсе нельзя использовать any.
     // Это означает лишь, что в подобных ситуация разработчик должен явно писать any,
     "noImplicitAny": true,
+
     "module": "ESNext",
     // В какую спецификацию компилируем: для поддержки большинства браузеров
     "target": "es5",
@@ -27,6 +28,7 @@
     // c флагом результат [object Object]
     // console.log(Moment);
     "esModuleInterop": true,
+    
     // Если какая-либо библиотека не имеет default import,
     // лоадеры вроде ts-loader или babel-loader автоматически создают их
     // вместо такого импорта
@@ -35,9 +37,11 @@
     // import React from 'react';
     "allowSyntheticDefaultImports": true
   },
+  
   "ts-node": {
     "compilerOptions": {
       "module": "CommonJS"
     }
-  }
+  },
+  
 }
