@@ -5,13 +5,16 @@
  */
 
 import type { Config } from 'jest';
+import path, { dirname } from 'path';
+import JestEmptyComponent from './JestEmptyComponent';
 
 
 
 const config: Config = {
   preset: 'ts-jest',
   moduleNameMapper: {
-    '\\.(css|scss)$': 'identity-obj-proxy'
+    '\\.(css|scss)$': 'identity-obj-proxy',
+    '\\.svg': path.resolve(__dirname, 'JestEmptyComponent.tsx' )
   },
   globals: {
     'ts-jest': {
@@ -52,10 +55,12 @@ const config: Config = {
   modulePaths:[
     '<rootDir>src'
   ],
+  
   testMatch: [
     // Обнаружил разницу между МАК ОС и ВИНДОУС!!!
     '<rootDir>src/**/*(*.)@(spec|test).[tj]s?(x)',
   ],
+  
   rootDir: '../../',
 
   transform: {
