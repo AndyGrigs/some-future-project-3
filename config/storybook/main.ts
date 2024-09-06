@@ -10,14 +10,8 @@ const config: StorybookConfig = {
     "@chromatic-com/storybook",
     "@storybook/addon-interactions",
   ],
-  webpackFinal: async (config) => {
-    config.resolve.alias = {
-      ...config.resolve.alias,
-      shared: path.resolve(__dirname, '../src/shared'),
-    };
   framework: {
     name: "@storybook/react-webpack5",
-    options: {},
-  },
+    options: {}
+  }
 };
-export default config;
