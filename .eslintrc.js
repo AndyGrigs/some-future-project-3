@@ -14,6 +14,7 @@ module.exports = {
         "plugin:react-hooks/recommended",
         "plugin:react/recommended",
         "plugin:prettier/recommended",
+        "plugin:storybook/recommended"
     ],
     "overrides": [
         {
