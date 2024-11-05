@@ -1,0 +1,14 @@
+// src/components/Header/PromoBanner.module.scss
+
+.promoBanner {
+    background-color: #5ce1a8; // Green background from Figma
+    color: #0e1e4d;            // Dark text color
+    text-align: center;
+    padding: 0.5rem;
+    font-size: 0.875rem;
+  
+    strong {
+      font-weight: bold;
+    }
+  }
+  
