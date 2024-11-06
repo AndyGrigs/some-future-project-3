@@ -4,7 +4,7 @@ import { classNames } from 'shared/helpers/classNames/classNames';
 
 export enum ThemeButton {
   CLEAR = 'clear',
-  OUTLINE = "OUTLINE",
+  OUTLINE = "outline",
 }
 
 export interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
